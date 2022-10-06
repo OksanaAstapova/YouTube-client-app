@@ -10,6 +10,8 @@ import { CreateCardComponent } from './create-card/create-card.component';
 import { MoreInfoComponent } from './more-info/more-info.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { SearchItemComponent } from './search-item/search-item.component';
+import { HeaderComponent } from './header/header.component';
+import { SearchBlockComponent } from './search-block/search-block.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SearchItemComponent } from './search-item/search-item.component';
     CreateCardComponent,
     MoreInfoComponent,
     SearchResultComponent,
-    SearchItemComponent
+    SearchItemComponent,
+    HeaderComponent,
+    SearchBlockComponent
   ],
   imports: [
     BrowserModule,

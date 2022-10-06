@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthorizationComponent implements OnInit {
 
+  userName: string = `Your name`;
+
   constructor() { }
 
   ngOnInit(): void {
