@@ -1,0 +1,37 @@
+
+.sort{
+
+  .sort__wrapper{
+
+    display: flex;
+    gap: 21px;
+    justify-content: center;
+    height: 50px;
+    margin-top: 15px;
+
+    .sort__title{
+
+      font-size: 12px;
+      line-height: 14px;
+      color: #929292;
+    }
+
+    .sort__by{
+
+      font-size: 12px;
+      line-height: 14px;
+      text-decoration-line: underline;
+      color: #2F80ED;
+    }
+
+    .sort__input{
+
+      width: 139px;
+      height: 13px;
+      border: none;
+    }
+
+  }
+
+
+}
