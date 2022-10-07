@@ -1,0 +1,17 @@
+.search-results{
+
+  width: 100vw;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+
+  .cards-wrapper{
+
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 31px;
+    justify-content: space-evenly;
+    row-gap: 30px;
+  }
+}
