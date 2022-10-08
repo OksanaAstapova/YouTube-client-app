@@ -2,7 +2,8 @@
   <div class="header__wrapper">
     <div class="header__logo"></div>
     <app-search-block></app-search-block>
-    <button class="header__button-settings" type="button"></button>
+    <button class="header__button-settings" type="button" (click)="toggleShow()"></button>
     <app-authorization></app-authorization>
   </div>
 </div>
+<app-sort *ngIf="isShown"></app-sort>
