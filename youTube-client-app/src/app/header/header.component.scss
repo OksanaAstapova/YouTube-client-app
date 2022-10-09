@@ -20,6 +20,26 @@
       background-size: contain;
     }
 
+    .search__field{
+
+      width: 396px;
+      height: 24px;
+      background: #EFEFEF;
+      border: none;
+
+    }
+
+    .search__button{
+
+      width: 80px;
+      height: 24px;
+      background: #2F80ED;
+      border-radius: 0px 4px 4px 0px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
     .header__button-settings{
       width: 24px;
       height: 24px;

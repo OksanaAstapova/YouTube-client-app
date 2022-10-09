@@ -1,3 +1,5 @@
 <section class="search-results">
-  <app-cards class="cards-wrapper"></app-cards>
+  <div class="cards-wrapper">
+    <app-cards  *ngFor="let result of results" [result]='result'></app-cards>
+  </div>
 </section>

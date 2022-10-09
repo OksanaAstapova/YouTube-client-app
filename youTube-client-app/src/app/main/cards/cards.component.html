@@ -1,26 +1,26 @@
-<div class="card" *ngFor="let card of items">
+<div class="card">
   <div class="card__content">
-    <img class="card__img" [src]="card.snippet.thumbnails.medium.url" [alt]="card.snippet.title">
+    <img class="card__img" [src]="result.snippet.thumbnails.medium.url" [alt]="result.snippet.title">
     <div class="card__info">
       <div class="card__statistic">
         <div class="card__statistic_part">
           <img class="icon" src="../../../assets/icons/viewed.png" alt="view count">
-          <span class="statistics__data">{{card.statistics.viewCount}}</span>
+          <span class="statistics__data">{{result.statistics.viewCount}}</span>
         </div>
         <div class="card__statistic_part">
           <img class="icon" src="../../../assets/icons/liked.png" alt="like count">
-          <span class="statistics__data">{{card.statistics.likeCount}}</span>
+          <span class="statistics__data">{{result.statistics.likeCount}}</span>
         </div>
         <div class="card__statistic_part">
           <img class="icon" src="../../../assets/icons/dislike.png" alt="dislike count">
-          <span class="statistics__data">{{card.statistics.dislikeCount}}</span>
+          <span class="statistics__data">{{result.statistics.dislikeCount}}</span>
         </div>
         <div class="card__statistic_part">
           <img class="icon" src="../../../assets/icons/group.png" alt="group count">
-          <span class="statistics__data">{{card.statistics.commentCount}}</span>
+          <span class="statistics__data">{{result.statistics.commentCount}}</span>
         </div>
       </div>
-      <span class="card__title">{{card.snippet.title}}</span>
+      <span class="card__title">{{result.snippet.title}}</span>
       <button class="card__button" type="submit">more...</button>
     </div>
   </div>

@@ -1,23 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent{
 
-  isShown: boolean = false ;
+  @Output() search = new EventEmitter<string>();
+
+  public searchTerm: string = '';
+
+  isShown: boolean = false;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+     searchResponse(): void {
+      if (this.searchTerm) this.search.emit(this.searchTerm);
+      console.log(this.searchTerm);
+    }
 
   toggleShow() {
 
     this.isShown = ! this.isShown;
-    console.log("*")
 
   }
 

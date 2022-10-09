@@ -1,6 +1,5 @@
 
-  <app-header></app-header>
+  <app-header (search)='getSearchTerm($event)'></app-header>
   <main>
-
-    <app-search-results></app-search-results>
+    <app-search-results [searchTerm]='searchTerm'></app-search-results>
   </main>
