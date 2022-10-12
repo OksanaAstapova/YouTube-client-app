@@ -1,5 +1,12 @@
 
   <app-header (search)='getSearchTerm($event)'></app-header>
   <main>
-    <app-search-results [searchTerm]='searchTerm'></app-search-results>
+    <app-sort *ngIf="isShown"
+      (sort)='getSort($event)'
+      (filter)='getFilter($event)'>
+    </app-sort>
+    <app-search-results [searchTerm]='searchTerm'
+                            [sortBy]='sortBy'
+                            [filterData]='filterData'>
+    </app-search-results>
   </main>

@@ -13,6 +13,10 @@ export class SearchResultsComponent implements OnChanges {
 
   @Input() results: Item[] = [];
 
+  @Input() filterData: string = '';
+
+  @Input() sortBy: string = '';
+
   ngOnChanges() {
 
     if (this.searchTerm) this.results = cardsData.items;

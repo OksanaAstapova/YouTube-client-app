@@ -1,9 +1,9 @@
 <section class="sort">
   <div class="sort__wrapper">
     <span class="sort__title">Sorting by:</span>
-    <span class="sort__by sort__by_date">date</span>
-    <span class="sort__by sort__by_views">count of views</span>
-    <span class="sort__by sort__by_word">by word or sentence</span>
-    <input class="sort__input" type="text">
+    <span class="sort__by sort__by_date" (click)='sortByDate()'>date</span>
+    <span class="sort__by sort__by_views" (click)='sortByViews()'>count of views</span>
+    <span class="sort__by filter">by word or sentence</span>
+    <input class="sort__input" type="text" (input)='filter.emit($event)'>
   </div>
 </section>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -13,6 +13,13 @@ export class HeaderComponent{
 
   isShown: boolean = false;
 
+  public filterState!: boolean;
+
+  public sortBy = '';
+
+  public filterData = '';
+
+
   constructor() { }
 
      searchResponse(): void {
@@ -20,10 +27,10 @@ export class HeaderComponent{
       console.log(this.searchTerm);
     }
 
-  toggleShow() {
+    toggleShow() {
 
-    this.isShown = ! this.isShown;
+      this.isShown = ! this.isShown;
+
+    }
 
   }
-
-}

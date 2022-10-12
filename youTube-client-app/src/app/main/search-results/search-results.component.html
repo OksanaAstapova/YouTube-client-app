@@ -1,5 +1,6 @@
 <section class="search-results">
   <div class="cards-wrapper">
-    <app-cards  *ngFor="let result of results" [result]='result'></app-cards>
+    <app-cards  *ngFor="let result of results | filter: filterData | sort: sortBy"
+     [result]='result'></app-cards>
   </div>
 </section>

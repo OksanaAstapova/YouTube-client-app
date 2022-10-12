@@ -11,6 +11,8 @@ import { HeaderComponent } from './header/header.component';
 import { SortComponent } from './main/sort/sort.component';
 import { CardsComponent } from './main/cards/cards.component';
 import { SearchResultsComponent } from './main/search-results/search-results.component';
+import { FilterPipe } from './pipes/filter/filter.pipe';
+import { SortPipe } from './pipes/sort/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { SearchResultsComponent } from './main/search-results/search-results.com
     SortComponent,
     CardsComponent,
     SearchResultsComponent,
+    FilterPipe,
+    SortPipe
   ],
   imports: [
     BrowserModule,
