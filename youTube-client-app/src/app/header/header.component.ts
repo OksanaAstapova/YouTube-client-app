@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,8 @@ export class HeaderComponent{
   public searchTerm: string = '';
 
   isShown: boolean = false;
+
+  @Output() show = new EventEmitter<boolean>();
 
   public filterState!: boolean;
 
@@ -30,6 +32,8 @@ export class HeaderComponent{
     toggleShow() {
 
       this.isShown = ! this.isShown;
+      this.show.emit(this.isShown);
+      console.log(this.isShown)
 
     }
 

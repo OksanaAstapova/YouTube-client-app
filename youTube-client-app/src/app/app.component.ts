@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
 @Component({
@@ -12,11 +12,17 @@ export class AppComponent {
 
   public searchTerm = '';
 
-  isShown: boolean = true;
+  isShown: boolean;
 
   public sortBy = '';
 
   public filterData = '';
+
+  getState(bool: boolean){
+
+    this.isShown = bool;
+    console.log(bool)
+  }
 
   getSearchTerm(item: any) {
     this.searchTerm = item;
