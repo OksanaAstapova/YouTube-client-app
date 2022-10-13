@@ -13,6 +13,7 @@ import { CardsComponent } from './main/cards/cards.component';
 import { SearchResultsComponent } from './main/search-results/search-results.component';
 import { FilterPipe } from './pipes/filter/filter.pipe';
 import { SortPipe } from './pipes/sort/sort.pipe';
+import { ColorBorderDirective } from './directives/color-border/color-border.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SortPipe } from './pipes/sort/sort.pipe';
     CardsComponent,
     SearchResultsComponent,
     FilterPipe,
-    SortPipe
+    SortPipe,
+    ColorBorderDirective
   ],
   imports: [
     BrowserModule,
