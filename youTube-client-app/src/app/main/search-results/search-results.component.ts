@@ -20,7 +20,6 @@ export class SearchResultsComponent implements OnChanges {
   ngOnChanges() {
 
     if (this.searchTerm) this.results = cardsData.items;
-    console.log(this.results)
 
   }
 

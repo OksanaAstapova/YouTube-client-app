@@ -21,7 +21,6 @@ export class AppComponent {
   getState(bool: boolean){
 
     this.isShown = bool;
-    console.log(bool)
   }
 
   getSearchTerm(item: any) {
@@ -35,7 +34,6 @@ export class AppComponent {
   getFilter(event: Event) {
     const target = event.target as HTMLInputElement;
     this.filterData = target.value;
-    console.log(this.filterData)
   }
 
 
