@@ -26,14 +26,12 @@ export class HeaderComponent{
 
      searchResponse(): void {
       if (this.searchTerm) this.search.emit(this.searchTerm);
-      console.log(this.searchTerm);
     }
 
     toggleShow() {
 
       this.isShown = ! this.isShown;
       this.show.emit(this.isShown);
-      console.log(this.isShown)
 
     }
 

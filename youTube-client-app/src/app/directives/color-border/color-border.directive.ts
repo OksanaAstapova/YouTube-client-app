@@ -24,7 +24,6 @@ export class ColorBorderDirective implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(Date.parse(this.appColorBorder))
 
     this.count = Math.trunc((Date.now() - Date.parse(this.appColorBorder)) / this.day);
 

@@ -20,14 +20,12 @@ export class SortComponent {
   sortByDate() {
     this.date = !this.date;
     this.sort.emit(`date-${this.date ? 'up' : 'down'}`);
-    console.log(this.date)
 
   }
 
   sortByViews() {
     this.views = !this.views;
     this.sort.emit(`views-${this.views ? 'up' : 'down'}`);
-    console.log(this.views)
   }
 
   constructor() { }
