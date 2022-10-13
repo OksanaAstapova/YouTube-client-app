@@ -1,0 +1,26 @@
+
+.login{
+
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+
+  .login__user-name{
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #4F4F4F;
+  }
+
+  .login__icon{
+
+    width: 24px;
+    height: 24px;
+    background-image: url(../../assets/icons/login.png);
+    background-size: cover;
+  }
+}

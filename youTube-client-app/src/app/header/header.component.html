@@ -1,0 +1,12 @@
+<div class="header">
+  <div class="header__wrapper">
+    <div class="header__logo"></div>
+    <form class="search">
+      <input class="search__field" type="text" name="search" [(ngModel)]='searchTerm'>
+      <button class="search__button" (click)="searchResponse()">search</button>
+    </form>
+    <button class="header__button-settings" type="button" (click)="toggleShow()"></button>
+    <app-authorization></app-authorization>
+  </div>
+</div>
+
