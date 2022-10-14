@@ -1,4 +1,4 @@
-import { IResponse } from 'src/app/models/search-response.model';
+import { IResponse } from 'src/app/youtube/models/search-response.model';
 
 const cardsData: IResponse = {
   kind: 'youtube#videoListResponse',
